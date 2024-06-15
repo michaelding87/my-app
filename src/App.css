@@ -1,0 +1,83 @@
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panels-container {
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Centers the items vertically */
+  gap: 2vw; /* Adjust space between the panels as needed */
+}
+
+.panel {
+  position: relative;
+  text-align: center;
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.navigation {
+  display: block;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  width: 16vw; /* Set a large width */
+  height: 16vw; /* Ensure height scales proportionately */
+}
+
+.icon-container:hover .navigation {
+  opacity: 0.5; /* Make image opaque on hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 2vw; /* Responsive font size */
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for overlay */
+}
+
+.icon-container:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.overlay-text {
+  color: black;
+  font-family: Helvetica-Neue; /* Adjust to match the inspiration font */
+  text-transform: uppercase;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
