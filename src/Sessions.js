@@ -1,19 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import 'bulma/css/bulma.min.css';
+import './Sessions.module.css';
 
 function Sessions() {
-  const [workouts, setWorkouts] = useState([]);
-
-  useEffect(() => {
-    fetch('/sessions.json')
-      .then(response => response.json())
-      .then(data => setWorkouts(data))
-      .catch(error => console.error('Error fetching workouts:', error));
-  }, []);
-
   return (
-    <div>
-      <h1>Sessions Page</h1>
-      <p>This is a brief description of the sessions.</p>
+    <div className="container">
+      <h1 className="title">Sessions Page</h1>
+      <p className="subtitle">This is the Sessions page.</p>
       <table>
         <thead>
           <tr>
@@ -39,3 +32,5 @@ function Sessions() {
 }
 
 export default Sessions;
+
+
