@@ -1,6 +1,6 @@
 import React from 'react';
 import SpotifyPlayer from './SpotifyPlayer'; // Import the SpotifyPlayer component
-import './Tunes.module.css';
+
 
 function Tunes() {
   return (
