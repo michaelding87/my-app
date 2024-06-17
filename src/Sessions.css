@@ -1,0 +1,14 @@
+/* Custom styles for Sessions component */
+.sessions-container {
+    padding: 20px;
+  }
+  
+  .sessions-container .title {
+    margin-bottom: 20px;
+  }
+  
+  .sessions-container .table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-
+import 'bulma/css/bulma.min.css';
+import './Workouts.css'; // Custom styles for Workouts
 
 function Workouts() {
   const [workouts, setWorkouts] = useState([]);
@@ -12,10 +13,10 @@ function Workouts() {
   }, []);
 
   return (
-    <div>
-      <h1>Workouts Page</h1>
+    <div className="workouts-container">
+      <h1 className="title">Workouts Page</h1>
       <p>This is a brief description of the workouts.</p>
-      <table>
+      <table className="table is-striped is-hoverable">
         <thead>
           <tr>
             <th>Equipment</th>
@@ -27,7 +28,7 @@ function Workouts() {
         <tbody>
           {workouts.map((workout, index) => (
             <tr key={index}>
-              <td>{workout.equipment}</td>  
+              <td>{workout.equipment}</td>
               <td>{workout.focus}</td>
               <td>{workout.trainer}</td>
               <td>{workout.participants}</td>

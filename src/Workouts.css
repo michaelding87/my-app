@@ -1,0 +1,14 @@
+/* Custom styles for Workouts component */
+.workouts-container {
+    padding: 20px;
+  }
+  
+  .workouts-container .title {
+    margin-bottom: 20px;
+  }
+  
+  .workouts-container .table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  

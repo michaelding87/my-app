@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import 'bulma/css/bulma.min.css';
+import './Sessions.css'; // Custom styles for Sessions
 
 function Sessions() {
   const [workouts, setWorkouts] = useState([]);
@@ -11,10 +13,10 @@ function Sessions() {
   }, []);
 
   return (
-    <div>
-      <h1>Sessions Page</h1>
+    <div className="sessions-container">
+      <h1 className="title">Sessions Page</h1>
       <p>This is a brief description of the sessions.</p>
-      <table>
+      <table className="table is-striped is-hoverable">
         <thead>
           <tr>
             <th>Date</th>
@@ -26,7 +28,7 @@ function Sessions() {
         <tbody>
           {workouts.map((workout, index) => (
             <tr key={index}>
-              <td>{workout.date}</td>  
+              <td>{workout.date}</td>
               <td>{workout.time}</td>
               <td>{workout.location}</td>
               <td>{workout.leader}</td>
