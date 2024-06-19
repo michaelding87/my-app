@@ -5,8 +5,8 @@ import './CustomStyles.css';
 function AboutUs() {
   return (
     <div className="container">
-      <section className="section custom-margin">
-        
+      <section className="custom-margin">
+
         <h1>About Us - Muay Thai Beats</h1>
         <p>Welcome to Muay Thai Beats!</p>
         <p>
